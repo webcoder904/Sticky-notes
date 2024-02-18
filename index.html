@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Advanced Sticky Notes</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="toolbar">
+            <button onclick="createStickyNote()">New Note</button>
+            <input type="text" placeholder="Add Tag" id="tagInput">
+            <button onclick="filterByTag()">Filter by Tag</button>
+            <button onclick="clearFilter()">Clear Filter</button>
+        </div>
+        <div class="sticky-container" id="sticky-container">
+            <!-- Sticky notes will be appended here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
